@@ -1,0 +1,27 @@
+.pesquisa {
+    input {
+        border: 2px solid #e8e8e8;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #212121;
+        font-size: small;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        width: 45%;
+        top: 65%;
+        right: 26%;
+        
+        @media screen and (max-width: 765px) {
+            padding: 10px 5px;
+            right: 30%;
+        }
+
+        &:focus {
+            outline-color: white;
+            background-color: #212121;
+            color: #e8e8e8;
+            box-shadow: 5px 5px #888888;
+           }
+       }
+}

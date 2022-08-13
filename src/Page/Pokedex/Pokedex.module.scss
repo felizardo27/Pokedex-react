@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
+
+body {
+    background-image: url(../../assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+    .container {
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+
+        .pokedex {
+            width: 100%;
+            max-width: 425px;
+
+            @media screen and (max-width: 765px) {
+                max-width: 300px;
+            }
+        }
+
+        .pokemon{
+             position: absolute;
+             left: 50%;
+             bottom: 55%;
+             transform: translate(-63%, 20%);
+             height: 18%;
+        }
+
+        .pokemonData {
+            position: absolute;
+            top: 54.5%;
+            right: 27%;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #484848;
+
+            .name {
+                text-transform: capitalize;
+            }
+        }
+
+        .voltar{
+            position: absolute;
+            top: 75%;
+            left: 18%;
+        }
+
+        .proximo{
+            position: absolute;
+            top: 75%;
+            right: 25%;
+        }
+    }
+}
